@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/styles.css">
+
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <form action="/register" method="POST">
+        <div>
+            <label for="username">Enter Username:</label>
+            <input type="text" name="username" id="username" placeholder="username">
+        </div>
+        <div>
+            <label for="password">Enter password:</label>
+            <input type="password" name="password" id="password" placeholder="password">
+        </div>
+        <button>Sign UP</button>
+    </form>
+    <button id="login">
+        Login
+    </button>
+</body>
+<script>
+    document.getElementById('login').addEventListener('click',function(){
+        window.location.href='/login';
+    });
+</script>
+</html>
